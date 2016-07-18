@@ -3,7 +3,7 @@ TIL (Today I Learned) is a place to document what I learned through development 
 
 This document is updated daily at 10PM (GMT+7)
 
-WebAPI:
+## WebAPI:
 
 1. Notification:
 This API allows you to enable desktop notification that is visible at the corner of your desktop.
@@ -37,3 +37,8 @@ if (Notification.permission === 'denied') {
   alert("permission is denied");
 }
 ```
+
+
+## Git
+* Retrieve a file from a specific revision: 5 should be replaced with how many commits is it from current HEAD revision
+```git checkout master~5 image.png```

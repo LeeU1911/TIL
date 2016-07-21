@@ -42,3 +42,6 @@ if (Notification.permission === 'denied') {
 ## Git
 * Retrieve a file from a specific revision: 5 should be replaced with how many commits is it from current HEAD revision
 ```git checkout master~5 image.png```
+
+## IntelliJ stuffs
+* Add Jasmine code completion [http://biercoff.com/adding-jasmine-autocomplete-to-intellij-idea/]

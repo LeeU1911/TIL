@@ -45,3 +45,7 @@ if (Notification.permission === 'denied') {
 
 ## IntelliJ stuffs
 * Add Jasmine code completion [http://biercoff.com/adding-jasmine-autocomplete-to-intellij-idea/]
+
+## Windows cmd
+* Find out which application is using port (required cmd opened with Administrator privilege)
+```netstat -anob```

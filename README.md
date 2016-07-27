@@ -43,6 +43,10 @@ if (Notification.permission === 'denied') {
 * Retrieve a file from a specific revision: 5 should be replaced with how many commits is it from current HEAD revision
 ```git checkout master~5 image.png```
 
+* Checkout a new branch from a tag
+```git checkout -b newbranch v1.0```
+ref: http://stackoverflow.com/questions/10940981/git-how-to-create-a-new-branch-from-a-tag
+
 ## IntelliJ stuffs
 * Add Jasmine code completion [http://biercoff.com/adding-jasmine-autocomplete-to-intellij-idea/]
 

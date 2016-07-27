@@ -44,7 +44,9 @@ if (Notification.permission === 'denied') {
 ```git checkout master~5 image.png```
 
 * Checkout a new branch from a tag
-```git checkout -b newbranch v1.0```
+```
+git checkout -b newbranch v1.0
+```
 ref: http://stackoverflow.com/questions/10940981/git-how-to-create-a-new-branch-from-a-tag
 
 ## IntelliJ stuffs

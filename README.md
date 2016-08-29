@@ -41,10 +41,14 @@ if (Notification.permission === 'denied') {
 
 ## Git
 * Retrieve a file from a specific revision: 5 should be replaced with how many commits is it from current HEAD revision
-```git checkout master~5 image.png```
+```
+git checkout master~5 image.png
+```
 
 * Checkout a new branch from a tag 
-```git checkout -b newbranch v1.0```
+```
+git checkout -b newbranch v1.0
+```
 ref: http://stackoverflow.com/questions/10940981/git-how-to-create-a-new-branch-from-a-tag
 
 ## IntelliJ stuffs
@@ -52,4 +56,14 @@ ref: http://stackoverflow.com/questions/10940981/git-how-to-create-a-new-branch-
 
 ## Windows cmd
 * Find out which application is using port (required cmd opened with Administrator privilege)
-```netstat -anob```
+```
+netstat -anob
+```
+
+## NPM
+* NPM behind a proxy, it doesn't take http_proxy and https_proxy environment variables as usual. But it has to be configured as below. Notice that it needs "http://" protocol for both and the dash instead of underscore in "https-proxy":
+```
+npm config set proxy http://localhost:3128
+npm config set https-proxy http://localhost:3128
+```
+

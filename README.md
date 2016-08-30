@@ -45,6 +45,11 @@ if (Notification.permission === 'denied') {
 git checkout master~5 image.png
 ```
 
+* Disable SSL Verification in case of self-sign ceritificate
+```
+git config --add --global http.sslVerify false
+```
+
 * Checkout a new branch from a tag 
 ```
 git checkout -b newbranch v1.0

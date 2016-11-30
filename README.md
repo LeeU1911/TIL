@@ -89,3 +89,4 @@ Vagrant.configure("2") do |config|
 end
 ```
 Usually you find the `Vagrant.configure("2") do |config|` in your existing vagrantfile and insert the if block beneath.
+Reference: http://tmatilai.github.io/vagrant-proxyconf/

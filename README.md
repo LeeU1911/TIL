@@ -72,3 +72,20 @@ npm config set proxy http://localhost:3128
 npm config set https-proxy http://localhost:3128
 ```
 
+## Vagrant
+* Vagrant behind a proxy. Install plugin:
+```
+vagrant plugin install vagrant-proxyconf
+```
+Then add this code to vagrantfile:
+```
+Vagrant.configure("2") do |config|
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://192.168.0.2:3128/"
+    config.proxy.https    = "http://192.168.0.2:3128/"
+    config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  end
+  # ... other stuff
+end
+```
+Usually you find the `Vagrant.configure("2") do |config|` in your existing vagrantfile and insert the if block beneath.

@@ -56,6 +56,11 @@ git checkout -b newbranch v1.0
 ```
 ref: http://stackoverflow.com/questions/10940981/git-how-to-create-a-new-branch-from-a-tag
 
+* Merge up to a certain commit
+```
+git merge <commit-id>
+```
+
 ## IntelliJ stuffs
 * Add Jasmine code completion [http://biercoff.com/adding-jasmine-autocomplete-to-intellij-idea/]
 

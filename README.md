@@ -95,3 +95,12 @@ end
 ```
 Usually you find the `Vagrant.configure("2") do |config|` in your existing vagrantfile and insert the if block beneath.
 Reference: http://tmatilai.github.io/vagrant-proxyconf/
+
+## Cntlm
+* Unable to start CNTLM after changing config file.
+Look into Events Viewer of Windows, this error is reported:
+```
+cntlm: PID 3740: starting service `cntlm' failed: fork: 11, Resource temporarily unavailable
+```
+Reason: CNTLM unable to connect to remote proxy in cntlm.ini config file.
+After changing to another one, it starts just fine.

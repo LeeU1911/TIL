@@ -107,8 +107,7 @@ After changing to another one, it starts just fine.
 
 ## AngularJs
 * Minify angular app's javascripts files - 
-I found a great tutorial here: https://www.sitepoint.com/5-minutes-to-min-safe-angular-code-with-grunt/
-. To sum it up:
+I found a great tutorial here: https://www.sitepoint.com/5-minutes-to-min-safe-angular-code-with-grunt/. To sum it up:
   1. Use ngAnnotate plugin to make Angular's js files min-safe (it'll automatically enrich and make your controllers/directives/services/etc. use 'array' syntax like this `angular.controllers('myController', ['$scope', '$timeout', function($scope, $timeout){}]);` instead of the usual 'function' way that we frequently use to save typing `angular.controllers('myController', function($scope, $timeout){});`
   2. Concat all js files together
   3. Minify the concatenated file

@@ -110,4 +110,20 @@ After changing to another one, it starts just fine.
 I found a great tutorial here: https://www.sitepoint.com/5-minutes-to-min-safe-angular-code-with-grunt/. To sum it up:
   1. Use ngAnnotate plugin to make Angular's js files min-safe (it'll automatically enrich and make your controllers/directives/services/etc. use 'array' syntax like this `angular.controllers('myController', ['$scope', '$timeout', function($scope, $timeout){}]);` instead of the usual 'function' way that we frequently use to save typing `angular.controllers('myController', function($scope, $timeout){});`
   2. Concat all js files together
-  3. Minify the concatenated file
+  3. Minify the concatenated 
+  
+## MySQL
+* Unicode characters is not accepted by mysql db version 5.6.35. Error is thrown from java app similar to the below: 
+```
+(Incorrect string value: '\xE4\xC5\xCC\xC9\xD3\xD8...' for column 'contents' at row 1)
+```
+**Problem**: Table and column in mysql db wasn't configure to handle utf8 characters correctly
+**Solution**: Run below sql queries to set table and column to handle utf8 characters:
+```
+ALTER TABLE table_name CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+ALTER TABLE table_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+ALTER TABLE table_name CHANGE column_name column_name VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci
+```
+

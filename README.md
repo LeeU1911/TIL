@@ -115,7 +115,8 @@ I found a great tutorial here: https://www.sitepoint.com/5-minutes-to-min-safe-a
 ## MySQL
 * Unicode characters is not accepted by mysql db version 5.6.35. Error is thrown from java app similar to the below: 
 ```
-(Incorrect string value: '\xE4\xC5\xCC\xC9\xD3\xD8...' for column 'contents' at row 1)
+java.sql.SQLException: Incorrect string value: '\xE1\xBA\xA7n 1...' for column 'reason' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.43.jar!/:5.1.43]
 ```
 **Problem**: Table and column in mysql db wasn't configure to handle utf8 characters correctly
 **Solution**: Run below sql queries to set table and column to handle utf8 characters:

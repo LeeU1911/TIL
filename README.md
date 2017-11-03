@@ -128,3 +128,7 @@ ALTER TABLE table_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci
 ```
 
+
+## Machine Learning
+http://cs231n.github.io/
+http://cs231n.github.io/convolutional-networks/

@@ -1,8 +1,6 @@
 # TIL
 TIL (Today I Learned) is a place to document what I learned through development journey that doesn't deserve a blog post.
 
-This document is updated daily at 10PM (GMT+8)
-
 ## WebAPI:
 
 1. Notification:
@@ -131,4 +129,14 @@ ALTER TABLE table_name CHANGE column_name column_name VARCHAR(100) CHARACTER SET
 
 ## Machine Learning
 http://cs231n.github.io/
+
 http://cs231n.github.io/convolutional-networks/
+
+
+## Management
+
+Each successful project needs these 4 roles:
+- Single Threaded Owner (STO): Ultimate responsible person 
+- Quarter Back: Daily activities manager
+- Working Team: People doing the hard work
+- Leadership Team: Seniors that provides feedback

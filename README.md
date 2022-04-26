@@ -140,3 +140,5 @@ Each successful project needs these 4 roles:
 - Quarter Back: Daily activities manager
 - Working Team: People doing the hard work
 - Leadership Team: Seniors that provides feedback
+
+Reference: https://naomi.com/people-and-process-d5a72341a5be

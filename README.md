@@ -126,6 +126,8 @@ ALTER TABLE table_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci
 ```
 
+## Python
+Fail to install numpy on M1 Mac. Try this: https://github.com/numpy/numpy/issues/17784#issuecomment-729950525
 
 ## Machine Learning
 http://cs231n.github.io/

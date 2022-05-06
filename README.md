@@ -127,7 +127,16 @@ ALTER TABLE table_name CHANGE column_name column_name VARCHAR(100) CHARACTER SET
 ```
 
 ## Python
-Fail to install numpy on M1 Mac. Try this: https://github.com/numpy/numpy/issues/17784#issuecomment-729950525
+Fail to install `numpy` on M1 Mac. Try this: https://github.com/numpy/numpy/issues/17784#issuecomment-729950525
+
+Fail to install `cryptography` on M1 Mac. 
+```
+brew reinstall openssl@1.1
+export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"                                                                                                   
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"                                                                                               
+pip install cryptography==3.2.1 --global-option=build_ext --global-option="-L/opt/homebrew/opt/openssl@1.1/lib" --global-option="-I/opt/homebrew/opt/openssl@1.1/include"
+
+```
 
 ## Machine Learning
 http://cs231n.github.io/
